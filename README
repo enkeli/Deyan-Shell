@@ -1,0 +1,68 @@
+This is a shell for elgg.
+
+Features:
+
+********************
+
+Theming subsystem
+
+******************** 
+
++Deyan shell has a theming system. It means that the style of the page was handled by           individual themes, and can be changed  by user's or by administration. The themes for deyan shel were easy to modifique, or you can create your own theme or themes.
+
+ + You can do a theme for deyan shell, there are one example in folder </mod/deyan/views/default/themes/glass> from wich you can start. Also here in the community you can search for the plugin 'Tropical Theme (http://community.elgg.org/pg/plugins/project/752345/developer/vabel/tropical-theme)' wich is a theme for Deyan Shell.
+
+ + To include a theme, you must include the folder in view <themes/yourtheme> and register it trough the function deyan_register_theme($theme);
+
+ + Users can select their own theme.
+
+ + For users the page is http://<yourpage>/personalize/appearance/<user>
+
+ + Admin can choose the default theme for logged out people and newest users.
+
+ + For admins the page is <yourpage>/admin/appearance/theme 
+
+********************
+
+Icons subsystem
+
+**********************
+
+ +This shell also has a system of icon's libraries. Like the themes, admin can change the library to load. The library provides  a set of icons in different sizes to use by function deyan_view_icon(). When the library changes, all layout using that function  changes too. Also you can create your own library, there is a library example at </mod/deyan/views/default/icon_libraries/>.
+
+ +You can do a icon library, see the example in view <icon_libraries/gray> and register it with the function deyan_register_iconlib($iconlib).
+
+ +Admin can change the library to load.
+
+ + The admin page is <yourpage>/admin/appearance/icons 
+
+********************
+
+Panel (topbar)
+
+***********************
+
+ +We dropped out the topbar and redesigned it. Now we call it Panel, like your computer's desktop. The panel has two sections,  left section and right section. Here you can find simple links, or modules, like the start menu module, or like the login form.
+
+ +The start menu is where you find the applications, like blogs, pages, the wire, etc.(for developers, it shows an elgg's menu  called "start").
+
+ +The user's menu, is located at the right of the Panel, and here you can find links to your profile, your settings, to logout and   the admins can view a link for administration.(for developers, the menu showed is called "user").
+
+ +Logged out people can see a login form. 
+
+*(for developers) there are some examples in the plugin showing the way to include a simpe link or a module.  See the view deyan/panel/modules, also see the start.php for how to register that views. 
+
+********************
+
+Windows
+
+******************************
+
+ +The layout of the main content is presented like windows. A window has 3 sections: titlebar(header), body and footer.
+
+ +In the titlebar we echo the extras menu, the title of the window and the close button(a link to the dashboard).
+
+ +In the body you can find the main content of the page, but as a desktop window, when the content is too large, a scrollbar appears  in the window and not in your browser.
+
+ +In the footer we set the breadcrumbs and the footer menu.  
+
