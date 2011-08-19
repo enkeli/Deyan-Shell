@@ -21,14 +21,14 @@ $vars = array(
 
 	'background' 	=> "url($imagesurl\wallpaper.jpg)",
 	'shadow' 	=> '#000',
-	'border' 	=> 'rgba(255, 255, 255, .7)',
+	'border' 	=> 'rgba(255, 255, 255, .9)',
 
 
 	/*********************
 	      WINDOWS
 	*********************/
 	'window_background' 	=> 'rgba(100, 100, 100, .2)',
-	'window_main' 		=> 'rgba(255, 255, 255, .7)',
+	'window_main' 		=> 'rgba(255, 255, 255, .9)',
 	'window_module' 	=> 'rgba(100, 100, 100, .2)',
 
 
