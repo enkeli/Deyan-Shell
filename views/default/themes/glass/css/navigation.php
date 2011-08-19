@@ -141,23 +141,21 @@
 *************************************** */
 .elgg-menu-filter {
 	margin-bottom: 5px;
-	border-bottom: 2px solid #ccc;
 	display: table;
 	width: 100%;
+	padding: 5px 0 5px 0;
+	background: <?php echo $vars['theme']['window_module']; ?>;
+	border-radius: 5px;
+	box-shadow: 5px 5px 1px <?php echo $vars['theme']['window_background']; ?>;
 }
 .elgg-menu-filter > li {
 	float: left;
-	border: 2px solid #ccc;
-	border-bottom: 0;
-	background: #eee;
+	background: transparent;
 	margin: 0 0 0 10px;
-	
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	border-radius: 5px 5px 0 0;
 }
 .elgg-menu-filter > li:hover {
-	background: #dedede;
+	background: <?php echo $vars['theme']['window_background']; ?>;
+	border-radius: 5px;
 }
 .elgg-menu-filter > li > a {
 	text-decoration: none;
@@ -165,20 +163,22 @@
 	padding: 3px 10px 0;
 	text-align: center;
 	height: 21px;
-	color: #999;
+	color: white;
 }
 .elgg-menu-filter > li > a:hover {
-	background: #dedede;
-	color: #4690D6;
+	background: <?php echo $vars['theme']['window_background']; ?>;
+	border-radius: 5px;
 }
 .elgg-menu-filter > .elgg-state-selected {
-	border-color: #ccc;
-	background: white;
+	background: <?php echo $vars['theme']['window_module']; ?>;
+	border-radius: 5px;
 }
 .elgg-menu-filter > .elgg-state-selected > a {
 	position: relative;
-	top: 2px;
-	background: white;
+	font-weight: bold;
+}
+.elgg-menu-filter > .elgg-state-selected:hover {
+	background: <?php echo $vars['theme']['window_module']; ?>;
 }
 
 /* ***************************************
