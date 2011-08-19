@@ -195,13 +195,11 @@
 	text-shadow: 0px 0px 5px #fff;
 	border-radius: 8px 0 0 8px;
 	padding: 5px;
-	border-top: 3px solid <?php echo $vars['theme']['border']; ?>;
-	border-bottom: 3px solid <?php echo $vars['theme']['border']; ?>;
-	border-left: 3px solid <?php echo $vars['theme']['border']; ?>;
+	border-top: 1px solid <?php echo $vars['theme']['border']; ?>;
+	border-bottom: 1px solid <?php echo $vars['theme']['border']; ?>;
+	border-left: 1px solid <?php echo $vars['theme']['border']; ?>;
 }
 .elgg-menu-page a:hover {
-	
-	color: black;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -326,25 +324,24 @@
 }
 .elgg-menu-owner-block li a {
 	display: block;
-	color: black;
+	color: white;
 	text-shadow: 0px 0px 5px #fff;
 	padding: 5px;
 	border-radius: 8px 0 0 8px;	
-	border-top: 1px solid rgba(255, 255, 255, .7);
-	border-bottom: 1px solid rgba(255, 255, 255, .7);
-	border-left: 1px solid rgba(255, 255, 255, .7);
+	border-top: 1px solid <?php echo $vars['theme']['border']; ?>;
+	border-bottom: 1px solid <?php echo $vars['theme']['border']; ?>;
+	border-left: 1px solid <?php echo $vars['theme']['border']; ?>;
 }
 .elgg-menu-owner-block li a:hover {
-	color: black;
 	text-decoration: none;
 	font-weight: bold;
 }
 .elgg-menu-owner-block li.elgg-state-selected > a {
-	background-color: #fff;
+	background-color: <?php echo $vars['theme']['border']; ?>;
 	color: black;
 	font-weight: bold;
-	border-top: 6px solid rgba(255, 255, 255, 1);
-	border-bottom: 6px solid rgba(255, 255, 255, 1);
+	border: none;
+	padding: 10px;
 }
 
 /* ***************************************
