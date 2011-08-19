@@ -36,13 +36,11 @@
 
 /* Info */
 .elgg-module-info > .elgg-head {
-	background: #e4e4e4;
+	background: <?php echo $vars['theme']['window_module']; ?>;
 	padding: 5px;
 	margin-bottom: 10px;
-	
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
+	box-shadow: 5px 5px 1px <?php echo $vars['theme']['window_background']; ?>
 }
 
 

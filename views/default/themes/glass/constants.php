@@ -29,7 +29,7 @@ $vars = array(
 	*********************/
 	'window_background' 	=> 'rgba(100, 100, 100, .2)',
 	'window_main' 		=> 'rgba(255, 255, 255, .9)',
-	'window_module' 	=> 'rgba(100, 100, 100, .2)',
+	'window_module' 	=> 'rgba(0, 0, 0, .4)',
 
 
 
