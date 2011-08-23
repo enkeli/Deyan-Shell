@@ -24,13 +24,14 @@
 	border-radius: 5px;
 	background: <?php echo $vars['theme']['window_module']; ?>;
 	padding: 5px;
+	color: #fff;
 }
 .elgg-module-aside .elgg-head {
 	padding-bottom: 5px;
 }
 .elgg-module-aside .elgg-head *{
-	color: #fff;
-	text-shadow: 0 0 5px #000;
+
+	text-shadow: 1px 1px 1px #000;
 	text-align: center;
 }
 
