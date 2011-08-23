@@ -192,6 +192,7 @@
 .elgg-menu-page a {
 	display: block;
 	color: white;
+	background: <?php echo $vars['theme']['window_module']; ?>;
 	text-shadow: 0px 0px 5px #fff;
 	border-radius: 8px 0 0 8px;
 	padding: 5px;
@@ -325,6 +326,7 @@
 .elgg-menu-owner-block li a {
 	display: block;
 	color: white;
+	background: <?php echo $vars['theme']['window_module']; ?>;
 	text-shadow: 0px 0px 5px #fff;
 	padding: 5px;
 	border-radius: 8px 0 0 8px;	
