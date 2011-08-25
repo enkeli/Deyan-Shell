@@ -41,12 +41,15 @@
 	List
 *************************************** */
 .elgg-list {
-	border-top: 1px dotted #CCCCCC;
 	margin: 5px 0;
 	clear: both;
 }
 .elgg-list > li {
-	border-bottom: 1px dotted #CCCCCC;
+	background: <?php echo $vars['theme']['window_main']; ?>;
+	box-shadow: 5px 5px 1px <?php echo $vars['theme']['window_background']; ?>;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 .elgg-item .elgg-subtext {
@@ -144,12 +147,12 @@
 /* ***************************************
 	River
 *************************************** */
-.elgg-river {
+/*.elgg-river {
 	border-top: 1px solid #CCC;
-}
-.elgg-river > li {
+}*/
+/*.elgg-river > li {
 	border-bottom: 1px solid #CCC;
-}
+}*/
 .elgg-river-item {
 	padding: 7px 0;
 }
@@ -183,12 +186,13 @@
 
 .elgg-river-comments-tab {
 	display: block;
-	background-color: #EEE;
-	color: #4690D6;
+	background-color: <?php echo $vars['theme']['window_background']; ?>;;
+	color: white;
 	margin-top: 5px;
 	width: auto;
 	float: right;
 	font-size: 85%;
+	font-weight: bold;
 	padding: 1px 7px;
 	
 	-webkit-border-radius: 5px 5px 0 0;
@@ -199,9 +203,12 @@
 <?php //@todo components.php ?>
 .elgg-river-comments {
 	margin: 0;
-	border-top: none;
+	border: none;
+	padding: 10px;
+	background: <?php echo $vars['theme']['window_background']; ?>;
+	border-radius: 5px 0 5px 5px;
 }
-.elgg-river-comments li:first-child {
+/*.elgg-river-comments li:first-child {
 	-webkit-border-radius: 5px 0 0;
 	-moz-border-radius: 5px 0 0;
 	border-radius: 5px 0 0;
@@ -210,12 +217,12 @@
 	-webkit-border-radius: 0 0 5px 5px;
 	-moz-border-radius-bottomleft: 0 0 5px 5px;
 	border-radius-bottomleft: 0 0 5px 5px;
-}
+}*/
 .elgg-river-comments li {
-	background-color: #EEE;
+	background-color: <?php echo $vars['theme']['window_main']; ?>;;
 	border-bottom: none;
 	padding: 4px;
-	margin-bottom: 2px;
+	margin-bottom: 10px;
 }
 .elgg-river-comments .elgg-media {
 	padding: 0;

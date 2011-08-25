@@ -129,9 +129,10 @@
 	
 }
 .elgg-main > .elgg-head {
-	padding-bottom: 3px;
-	border-bottom: 1px solid #CCCCCC;
+	padding: 3px;
 	margin-bottom: 10px;
+	background: <?php echo $vars['theme']['window_background']; ?>;
+	border-radius: 5px;
 }
 
 /***** PAGE FOOTER ******/
