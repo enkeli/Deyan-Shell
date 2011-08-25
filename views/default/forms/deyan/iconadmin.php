@@ -12,10 +12,10 @@
  * 
  **/ 
 	foreach ($vars['options'] as $option) {
-	// Use a custom background?
+	// load wich icons?
 	echo '<div class="elgg-col elgg-col-1of6">';
 		echo elgg_view("input/checkboxes", array(
-			'options' => array($option),
+			'options' => array($option => $option),
 			'name' => "iconadmin_$option",
 			'value' => (elgg_get_plugin_setting("iconadmin_$option", 'deyan') ? $option : ""),
 		));

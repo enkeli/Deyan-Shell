@@ -15,7 +15,7 @@
 	// Use a custom background?
 	echo '<div class="elgg-col elgg-col-3of5">';
 		echo elgg_view("input/checkboxes", array(
-			'options' => array(elgg_echo('deyan:background:custom')),
+			'options' => array(elgg_echo('deyan:background:custom') => elgg_echo('deyan:background:custom')),
 			'name' => 'background_custom',
 			'value' => (elgg_get_plugin_user_setting('background_custom', $vars['user']->guid, 'deyan') ? elgg_echo('deyan:background:custom') : ""),
 		));
@@ -32,7 +32,7 @@
 	echo '<div class="elgg-col elgg-col-1of5">';
 	
 		echo elgg_view("input/checkboxes", array(
-			'options' => array(elgg_echo('deyan:background:fixed')),
+			'options' => array(elgg_echo('deyan:background:fixed') => elgg_echo('deyan:background:fixed')),
 			'name' => 'background_fixed',
 			'value' => (elgg_get_plugin_user_setting('background_fixed', $vars['user']->guid, 'deyan') ? elgg_echo('deyan:background:fixed') : ""),
 		));

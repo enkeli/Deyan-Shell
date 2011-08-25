@@ -16,7 +16,7 @@
 	echo '<div>';
 	
 		echo elgg_view("input/checkboxes", array(
-			'options' => array(elgg_echo('deyan:panel:avatar')),
+			'options' => array(elgg_echo('deyan:panel:avatar') => elgg_echo('deyan:panel:avatar')),
 			'name' => 'avatar_panel',
 			'value' => (elgg_get_plugin_user_setting('avatar_panel', $vars['user']->guid, 'deyan') ? elgg_echo('deyan:panel:avatar') : ""),
 		));
