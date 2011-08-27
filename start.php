@@ -59,13 +59,14 @@ function deyan_init() {
 		));
 		
 		// Personalize > theme
+		if(elgg_get_plugin_setting('theme_selector', 'deyan') == 'yes') {
 		elgg_register_menu_item('page', array(
 			'name' => 'personalize_theme',
 			'text' => elgg_echo('deyan:theme'),
 			'href' => "personalize/theme/{$user->username}",
 			'context' => 'personalize',
 		));
-		
+		}
 		// Personalize > icons
 		elgg_register_menu_item('page', array(
 			'name' => 'personalize_icons',
@@ -288,9 +289,15 @@ function deyan_personalize_handler($page) {
 	}
 
 	elgg_push_breadcrumb(elgg_echo('deyan:personalize'), "personalize/appearance/$user->username");
-
+	
+	
+	
 	switch ($page[0]) {
 		case 'theme':
+			if(elgg_get_plugin_setting('theme_selector', 'deyan') != 'yes') {
+				register_error(elgg_echo('deyan:theme:error'));
+				forward('personalize');
+			}
 			elgg_push_breadcrumb(elgg_echo('deyan:theme'));
 			break;
 		case 'icons':

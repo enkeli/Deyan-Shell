@@ -35,6 +35,8 @@ $english = array(
 		      //Theme
 		      'deyan:theme:choose:default' => 'Choose the default theme:',
 		      'deyan:theme:changed:default' => ' is now the default theme.',
+		      'deyan:theme:admin' => 'Enable theme selector?',
+		      'deyan:theme:error' => 'Admin disabled theme selector',
 		      
 		      //Shell Options
 		      'deyan:scroll:admin' => 'Let user\'s decide whether use scroll bars or not?',

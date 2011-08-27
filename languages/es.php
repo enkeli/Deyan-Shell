@@ -35,6 +35,8 @@ $spanish = array(
 		      //Theme
 		      'deyan:theme:choose:default' => 'Elige el Tema por defecto:',
 		      'deyan:theme:changed:default' => ' es ahora el Tema predeterminado.',
+		      'deyan:theme:admin' => '¿Activar el selector de tema para los usuarios?',
+		      'deyan:theme:error' => 'El administrador ha desactivado la seleccion de temas',
 		      
 		      //Shell Options
 		      'deyan:scroll:admin' => '¿Dejar a los usuarios activar/desactivar las barras de desplazamiento?',
