@@ -89,7 +89,7 @@ function deyan_init() {
     // user_menu & start_menu.
     
     if (elgg_is_active_plugin('search')) {
-			deyan_register_panel_mod('search', 'right', 800);
+			deyan_register_panel_mod('search', 'right', 1000);
 		}
 		
     if(elgg_is_logged_in()){
@@ -164,11 +164,14 @@ function deyan_init() {
 		
 		
 		// Mods for the right side of the panel
+		
+		deyan_register_panel_mod('friends', 'right', 800);
+		
 		if (elgg_is_active_plugin('messages')) {
 			deyan_register_panel_mod('messages', 'right', 600);
 		}
 
-		deyan_register_panel_mod('user_menu', 'right');			
+		deyan_register_panel_mod('user_menu', 'right', 400);			
 			//Register the user menu
 			elgg_register_menu_item('user', array(
 				'name' => 'usersettings',
