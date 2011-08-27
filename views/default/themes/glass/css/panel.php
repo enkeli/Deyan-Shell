@@ -279,6 +279,7 @@ Search mod
 /********************************
  Messages
 ********************************/
-.message.unread a {
+.message.unread {
 	font-weight: bold;
+	text-shadow: none;
 }
