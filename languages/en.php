@@ -68,6 +68,10 @@ $english = array(
 		      'deyan:background:repeat:x' => 'repeat x',
 		      'deyan:background:repeat:y' => 'repeat y',
 		      
+		      // Scroll on windows
+		      'deyan:scroll' => 'Scroll bars',
+		      'deyan:scroll:use' => 'Use scroll bar on windows',
+		      
 		      
 		      
 		      

@@ -67,6 +67,10 @@ $spanish = array(
 		      'deyan:background:repeat:none' => 'no repetir',
 		      'deyan:background:repeat:x' => 'repetir x',
 		      'deyan:background:repeat:y' => 'repetir y',
+		       
+		      // Scroll on windows
+		      'deyan:scroll' => 'Barras de desplazamiento',
+		      'deyan:scroll:use' => 'Activar barras de desplazamiento en las ventanas',
 
 		      
 		      

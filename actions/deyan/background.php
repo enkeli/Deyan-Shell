@@ -1,5 +1,5 @@
 <?php
-/**
+/*
   Save Custom Background
 */
 
@@ -34,8 +34,15 @@ $custom = get_input('background_custom');
 	}
 	
 
-	
-
+/*
+Use windows scroll
+*/	
+$scroll = get_input('window_scroll');
+	if ($scroll) {
+		elgg_set_plugin_user_setting('window_scroll', 1, $user->guid, 'deyan');
+	} else {
+		elgg_unset_plugin_user_setting('window_scroll', $user->guid, 'deyan');
+	}
 	
 /******************************
  UPGRADE SIMPLECACHE

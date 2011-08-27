@@ -123,9 +123,8 @@
 .elgg-main {
 	background: <?php echo $vars['theme']['window_main']; ?>;
 	position: relative;
-	height: 490px;
 	padding: 10px;
-	overflow: auto;
+	
 	
 }
 .elgg-main > .elgg-head {

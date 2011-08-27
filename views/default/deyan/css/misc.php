@@ -19,6 +19,18 @@ body {
 }
 
 /* ***************************************
+	WINDOWS SCROLL
+*****************************************/
+.elgg-main {
+<?php if(elgg_get_plugin_user_setting('window_scroll', $vars['user']->guid, 'deyan') == 1) { 
+	      echo " height: 500px; overflow: auto;"; 
+	}
+	else {
+	      echo " min-height: 500px;";
+	}?>
+}
+
+/* ***************************************
 	AVATAR Panel
 *****************************************/
 .deyan-panel-avatar {
