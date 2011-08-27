@@ -31,6 +31,8 @@ $english = array(
 		      'deyan:icons:library:sizes' => 'Wich sizes of this library do you want to load?',
 		      'deyan:icons:library:preview' => 'Preview of ',
 		      'deyan:icons:library:changed:default' => ' is now the default library.',
+		      'deyan:icons:library:admin' => 'Enable Icon\'s library selector?',
+		      'deyan:icons:library:error' => 'Admin disabled icons selector',
 		      
 		      //Theme
 		      'deyan:theme:choose:default' => 'Choose the default theme:',

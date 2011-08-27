@@ -31,6 +31,8 @@ $spanish = array(
 		      'deyan:icons:library:sizes' => '¿Que tamaños quieres cargar?',
 		      'deyan:icons:library:preview' => 'Vista previa de ',
 		      'deyan:icons:library:changed:default' => ' es ahora la libreria predeterminada.',
+		      'deyan:icons:library:admin' => '¿Activar el selector de iconos para los usuarios?',
+		      'deyan:icons:library:error' => 'El administrador ha desactivado la seleccion de iconos',
 		      
 		      //Theme
 		      'deyan:theme:choose:default' => 'Elige el Tema por defecto:',

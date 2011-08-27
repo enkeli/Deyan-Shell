@@ -68,13 +68,14 @@ function deyan_init() {
 		));
 		}
 		// Personalize > icons
+		if(elgg_get_plugin_setting('icon_selector', 'deyan') == 'yes') {
 		elgg_register_menu_item('page', array(
 			'name' => 'personalize_icons',
 			'text' => elgg_echo('deyan:icons'),
 			'href' => "personalize/icons/{$user->username}",
 			'context' => 'personalize',
 		));
-		
+		}
 		// personalize > panel
 		elgg_register_menu_item('page', array(
 			'name' => 'personalize_panel',
@@ -301,6 +302,10 @@ function deyan_personalize_handler($page) {
 			elgg_push_breadcrumb(elgg_echo('deyan:theme'));
 			break;
 		case 'icons':
+			if(elgg_get_plugin_setting('icon_selector', 'deyan') != 'yes') {
+				register_error(elgg_echo('deyan:icons:library:error'));
+				forward('personalize');
+			}
 			elgg_push_breadcrumb(elgg_echo('deyan:icons'));
 			break;
 		case 'panel':
