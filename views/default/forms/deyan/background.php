@@ -69,9 +69,10 @@ echo elgg_view_module('info', elgg_echo('deyan:background'), $background);
 			'value' => (elgg_get_plugin_user_setting('window_scroll', $vars['user']->guid, 'deyan') ? elgg_echo('deyan:scroll:use') : ""),
 		));
 	$scroll .= '</div>';
-		
+	
+	if(elgg_get_plugin_setting('user_scroll','deyan') == 'yes') {	
 echo elgg_view_module('info', elgg_echo('deyan:scroll'), $scroll);
-		
+		}
 
 echo "<div class=\"clearfloat\">";
 echo elgg_view('input/submit', array('value' => elgg_echo('save')));
