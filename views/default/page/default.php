@@ -41,7 +41,7 @@ header("Content-type: text/html; charset=UTF-8");
 			<?php echo elgg_view('panel/main', $vars); ?>
 		</div>
 	</div>
-	<?php if ($vars['title'] != 'Dashboard' && $vars['title'] != ''): ?>
+	<?php if ($vars['title'] != elgg_echo('dashboard') && $vars['title'] != ''): ?>
 	<div class="elgg-page-header">
 		<div class="elgg-inner">
 			<?php echo elgg_view('page/elements/header', $vars); ?>
@@ -57,7 +57,7 @@ header("Content-type: text/html; charset=UTF-8");
 			<?php echo elgg_view('page/elements/body', $vars); ?>
 		</div>
 	</div>
-	<?php if ($vars['title'] != 'Dashboard' && $vars['title'] != ''): ?>
+	<?php if ($vars['title'] != elgg_echo('dashboard') && $vars['title'] != ''): ?>
 	<div class="elgg-page-footer">
 		<div class="elgg-inner">
 			<?php echo elgg_view('page/elements/footer', $vars); ?>
